@@ -9,6 +9,11 @@ import s from '../styles/app.style';
 
 import { Navbar, NavBarBrand } from 'reactstrap';
 
+// Import important component
+import SearchBar from './SearchBar';
+import Introduction from './Introduction';
+import Footer from './Footer';
+
 export default function App() {
   return (
     // <div style={s.root}>
@@ -43,19 +48,10 @@ export default function App() {
     //     </Interactive>
     //   </div>
     // </div>
-    <div>
-
-    <div class="jumbotron">
-        <h1 class="display-4">Amazing React, Bootstrap and Webpack</h1>
-        <p class="lead">Created with love</p>
-        <hr class="my-4"/>
-        <p>It uses utility classes for typography and spacing to space content out
-            within the larger container.</p>
-        <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-    </div>
-
+  <div>
+    <SearchBar />
+    <Introduction />
+    <Footer />
   </div>
   );
 }
